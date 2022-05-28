@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Microcharts.MAUI.Sample.MainPage"
+             xmlns:microcharts="clr-namespace:Microcharts.MAUI.Sample;assembly=Microcharts.MAUI.Sample">
+    <VerticalStackLayout 
+        Spacing="25" 
+        Padding="30" 
+        VerticalOptions="StartAndExpand">
+
+        <Image
+            Source="dotnet_bot.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="100"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Hello, Microchart!"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <microcharts:ChartView x:Name="Chart"
+                               HeightRequest="300"
+                               VerticalOptions="StartAndExpand" 
+                               HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>
